@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.fusesource.mqtt-client:mqtt-client:1.16"
+    implementation "com.github.purejavacomm:purejavacomm:1.0.2.RELEASE"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
